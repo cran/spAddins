@@ -49,6 +49,16 @@ Description: Inserts `%if.NULL%` at the cursor position.
 Binding: insertIfNULL_Addin
 Interactive: false
 
+Name: Insert %if_null%
+Description: Inserts `%if_null%` at the cursor position.
+Binding: insert_if_null_Addin
+Interactive: false
+
+Name: Insert %if_null_or_len0%
+Description: Inserts `%if_null_or_len0%` at the cursor position.
+Binding: insert_if_null_or_len0_Addin
+Interactive: false
+
 Name: Replace \ with \\
 Description: Replaces \ with \\ in the selected text.
 Binding: Back2doubleBackSlash
@@ -72,4 +82,56 @@ Interactive: false
 Name: Insert ->>
 Description: Inserts `->>` at the cursor position.
 Binding: insertArrowRL2_Addin
+Interactive: false
+
+
+
+Name: Enclose with $
+Description: Encloses selected text with `$`.
+Binding: enclose_with_dollar
+Interactive: false
+
+Name: Enclose with $$
+Description: Encloses selected text with `$$`.
+Binding: enclose_with_dollar2
+Interactive: false
+
+Name: Enclose with _
+Description: Encloses selected text with `_`.
+Binding: enclose_with_underscore
+Interactive: false
+
+Name: Enclose with __
+Description: Encloses selected text with `__`.
+Binding: enclose_with_underscore2
+Interactive: false
+
+Name: Enclose with *
+Description: Encloses selected text with `*`.
+Binding: enclose_with_asterisk
+Interactive: false
+
+Name: Enclose with **
+Description: Encloses selected text with `**`.
+Binding: enclose_with_asterisk2
+Interactive: false
+
+Name: Enclose with `
+Description: Encloses selected text with `.
+Binding: enclose_with_backtick
+Interactive: false
+
+Name: Insert single straight line
+Description: Insert single straight line.
+Binding: insert_ss_line_Addin
+Interactive: false
+
+Name: Insert double straight line
+Description: Insert double straight line.
+Binding: insert_ds_line_Addin
+Interactive: false
+
+Name: Insert single wavy line
+Description: Insert single wavy line.
+Binding: insert_sw_line_Addin
 Interactive: false
