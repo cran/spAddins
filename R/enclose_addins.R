@@ -9,6 +9,7 @@ enclose_selection_with <- function(SYMBOL = "") {
 
     for (sel in context$selection) {
         TXT <- sel$text
+        Encoding(TXT) <- "UTF-8"
 
         nTXT <- paste0(SYMBOL, TXT, SYMBOL)
 
@@ -66,7 +67,7 @@ enclose_with_dollar2 <- function() {
 #' Enclose with \code{_}
 #'
 #' Select a piece of text with a cursor and call this function as an addin
-#' to enclose the text with underscore sign (\code{_}).
+#' to enclose the text with underscore (\code{_}).
 #'
 #' @seealso About shortcut keys:
 #'  \href{https://rstudio.github.io/rstudioaddins/#keyboard-shorcuts}{keyboard shortcuts}.
@@ -89,7 +90,7 @@ enclose_with_underscore <- function() {
 #' Enclose with \code{__}
 #'
 #' Select a piece of text with a cursor and call this function as an addin
-#' to enclose the text with double underscore sign (\code{__}).
+#' to enclose the text with double underscore (\code{__}).
 #'
 #' @seealso About shortcut keys:
 #'  \href{https://rstudio.github.io/rstudioaddins/#keyboard-shorcuts}{keyboard shortcuts}.
@@ -111,7 +112,7 @@ enclose_with_underscore2 <- function() {
 #' Enclose with \code{*}
 #'
 #' Select a piece of text with a cursor and call this function as an addin
-#' to enclose the text with asterisk sign (\code{*}).
+#' to enclose the text with asterisk (\code{*}).
 #'
 #' @seealso About shortcut keys:
 #'  \href{https://rstudio.github.io/rstudioaddins/#keyboard-shorcuts}{keyboard shortcuts}.
@@ -152,7 +153,7 @@ enclose_with_asterisk2 <- function() {
 #' Enclose with back-tick
 #'
 #' Select a piece of text with a cursor and call this function as an addin
-#' to enclose the text with single back tick sign \code{``}.
+#' to enclose the text with single back tick \code{``}.
 #'
 #' @seealso About shortcut keys:
 #'  \href{https://rstudio.github.io/rstudioaddins/#keyboard-shorcuts}{keyboard shortcuts}.
@@ -169,6 +170,61 @@ enclose_with_backtick <- function() {
 }
 
 
+#' Enclose with single tilde
+#'
+#' Select a piece of text with a cursor and call this function as an addin
+#' to enclose the text with single tilde \code{~}.
+#'
+#' @seealso About shortcut keys:
+#'  \href{https://rstudio.github.io/rstudioaddins/#keyboard-shorcuts}{keyboard shortcuts}.
+#'
+#' @examples
+#'
+#' # To call the functions with keyboard shortcuts explore
+#' # link "keyboard shortcuts" in section "See also".
+#'
+#' @export
+#' @family 'Enclose selected symbols' addins
+enclose_with_tilde <- function() {
+    enclose_selection_with(SYMBOL = "~")
+}
 
 
+#' Enclose with double tilde
+#'
+#' Select a piece of text with a cursor and call this function as an addin
+#' to enclose the text with single tilde \code{~~}.
+#'
+#' @seealso About shortcut keys:
+#'  \href{https://rstudio.github.io/rstudioaddins/#keyboard-shorcuts}{keyboard shortcuts}.
+#'
+#' @examples
+#'
+#' # To call the functions with keyboard shortcuts explore
+#' # link "keyboard shortcuts" in section "See also".
+#'
+#' @export
+#' @family 'Enclose selected symbols' addins
+enclose_with_tilde2 <- function() {
+    enclose_selection_with(SYMBOL = "~~")
+}
 
+
+#' Enclose with caret
+#'
+#' Select a piece of text with a cursor and call this function as an addin
+#' to enclose the text with caret \code{^}.
+#'
+#' @seealso About shortcut keys:
+#'  \href{https://rstudio.github.io/rstudioaddins/#keyboard-shorcuts}{keyboard shortcuts}.
+#'
+#' @examples
+#'
+#' # To call the functions with keyboard shortcuts explore
+#' # link "keyboard shortcuts" in section "See also".
+#'
+#' @export
+#' @family 'Enclose selected symbols' addins
+enclose_with_tilde2 <- function() {
+    enclose_selection_with(SYMBOL = "^")
+}

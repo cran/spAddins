@@ -69,6 +69,14 @@ Description: Replaces \ with / in the selected text.
 Binding: Back2ForwardSlash
 Interactive: false
 
+
+Name: Correct md generated with "Writage"
+Description: Corrects md punctuaction in the selected text
+Binding: correct_writage_md_addin
+Interactive: false
+
+
+
 Name: Insert <<-
 Description: Inserts `<<-` at the cursor position.
 Binding: insertArrowLR2_Addin
@@ -121,6 +129,23 @@ Description: Encloses selected text with `.
 Binding: enclose_with_backtick
 Interactive: false
 
+Name: Enclose with ~
+Description: Encloses selected text with ~.
+Binding: enclose_with_tilde
+Interactive: false
+
+Name: Enclose with ~~
+Description: Encloses selected text with ~~.
+Binding: enclose_with_tilde2
+Interactive: false
+
+Name: Enclose with ^
+Description: Encloses selected text with ^.
+Binding: enclose_with_caret
+Interactive: false
+
+
+
 Name: Insert single straight line
 Description: Insert single straight line.
 Binding: insert_ss_line_Addin
@@ -134,4 +159,14 @@ Interactive: false
 Name: Insert single wavy line
 Description: Insert single wavy line.
 Binding: insert_sw_line_Addin
+Interactive: false
+
+Name: Insert R code chunk for conspects
+Description: Insert chunk for conspects.
+Binding: insert_chunk_r_Addin
+Interactive: false
+
+Name: Insert python code chunk for conspects
+Description: Insert chunk for conspects.
+Binding: insert_chunk_python_Addin
 Interactive: false

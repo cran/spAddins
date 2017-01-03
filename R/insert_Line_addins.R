@@ -9,7 +9,7 @@
 #  #' @family 'Insert at cursor position' addins
 #  insert_SSC_line <- function() {
 #      TEXT =
-#  "# ---------------------------------------------------------------------  ------ "
+#  "# --------------------------------------------------------------------------- "
 #      rstudioapi::insertText(text = TEXT)
 #  }
 #'
@@ -23,7 +23,7 @@
 #  #' @family 'Insert at cursor position' addins
 #  insert_DSC_line <- function() {
 #      TEXT =
-#          "# =============================================================  ============== "
+#          "# =========================================================================== "
 #      rstudioapi::insertText(text = TEXT)
 #  }
 #'
@@ -39,7 +39,7 @@
 #  #' @family 'Insert at cursor position' addins
 #  insert_SWC_line <- function() {
 #      TEXT =
-#  "# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  ~~~~~~ "
+#  "# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ "
 #      rstudioapi::insertText(text = TEXT)
 #  }
 
@@ -87,3 +87,6 @@ insert_sw_line_Addin <- function() {
         "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ "
     rstudioapi::insertText(text = TEXT)
 }
+
+
+

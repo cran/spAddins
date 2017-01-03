@@ -18,7 +18,8 @@ in the selected text.
 # link "keyboard shortcuts" in section "See also".
 }
 \seealso{
-About shortcut keys: \href{https://rstudio.github.io/rstudioaddins/#keyboard-shorcuts}{keyboard shortcuts}.
+About shortcut keys:
+\href{https://rstudio.github.io/rstudioaddins/#keyboard-shorcuts}{keyboard shortcuts}.
 
 Other 'Replace selected symbols' addins: \code{\link{Back2doubleBackSlash}}
 }

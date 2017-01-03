@@ -1,13 +1,12 @@
 Package: spAddins
 Type: Package
 Title: A Set of RStudio Addins
-Version: 0.1.5
-Date: 2016-07-12
+Version: 0.1.7
+Date: 2017-01-03
 Authors@R: person("Vilmantas", "Gegzna",
                     email = "GegznaV@gmail.com",
                     role = c("aut", "cre","cph")
             )
-Maintainer: Vilmantas Gegzna <GegznaV@gmail.com>
 Description: A set of RStudio addins that are designed to be used in
              combination with user-defined RStudio keyboard shortcuts. These
              addins either:
@@ -29,7 +28,8 @@ Depends: R (>= 3.2)
 Imports: rstudioapi
 Suggests: magrittr, knitr, rmarkdown
 NeedsCompilation: no
-Packaged: 2016-07-12 20:07:38 UTC; ViG
+Packaged: 2017-01-03 20:54:56 UTC; ViG
 Author: Vilmantas Gegzna [aut, cre, cph]
+Maintainer: Vilmantas Gegzna <GegznaV@gmail.com>
 Repository: CRAN
-Date/Publication: 2016-07-13 10:19:44
+Date/Publication: 2017-01-03 23:54:36

@@ -1,14 +1,14 @@
-
-
 # Main "replace" function
 
 replace_in_selection <- function(pattern, replacement){
     context <- rstudioapi::getActiveDocumentContext()
-    # '\\'
 
     for (sel in context$selection) {
-        TXT <- sel$text
-        nTXT <- gsub(pattern = pattern, replacement = replacement, TXT, fixed = TRUE)
+        TXT  <- sel$text
+        Encoding(TXT) <- "UTF-8"
+
+        nTXT <- gsub(pattern = pattern, replacement = replacement, TXT,
+                     fixed = TRUE)
 
         rstudioapi::modifyRange(sel$range, as.character(nTXT), context$id)
         break
@@ -46,7 +46,8 @@ Back2doubleBackSlash <- function() {
 #' to replace
 #' all single backslashes (\code{\\}) with single forwasdslashes (\code{/})
 #' in the selected text.
-#' @seealso About shortcut keys: \href{https://rstudio.github.io/rstudioaddins/#keyboard-shorcuts}{keyboard shortcuts}.
+#' @seealso About shortcut keys:
+#' \href{https://rstudio.github.io/rstudioaddins/#keyboard-shorcuts}{keyboard shortcuts}.
 #'
 #' @examples
 #'
@@ -57,3 +58,5 @@ Back2doubleBackSlash <- function() {
 Back2ForwardSlash <- function() {
     replace_in_selection(pattern = "\\", replacement = "/")
 }
+
+
